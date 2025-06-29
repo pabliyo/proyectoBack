@@ -1,0 +1,28 @@
+{
+  "name": "proyectoback",
+  "version": "1.0.0",
+  "description": "Api Rest en Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pabliyo/proyectoBack.git"
+  },
+  "author": "Pablo Hector Feliz",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/pabliyo/proyectoBack/issues"
+  },
+  "homepage": "https://github.com/pabliyo/proyectoBack#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
