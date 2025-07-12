@@ -11,22 +11,22 @@ Este proyecto consiste en una API RESTful desarrollada con Node.js, Express y Fi
 - Dotenv para variables de entorno
 - CORS
 
-### Estructura de carpetas
+## Estructura de carpetas
 
-proyectoBack/
-├── index.js
-├── .env
-├── utils/
-│ └── generateToken.js
-├── src/
-│ ├── controllers/
-│ ├── middlewares/
-│ ├── models/
-│ ├── routes/
-│ └── services/
-└── README.md
+- proyectoBack/
+- ├── index.js
+- ├── .env
+- ├── utils/
+- │ └── generateToken.js
+- ├── src/
+- │ ├── controllers/
+- │ ├── middlewares/
+- │ ├── models/
+- │ ├── routes/
+- │ └── services/
+- └── README.md
 
-#### Instalacion y configuracion
+## Instalacion y configuracion
 
 instalar dependencias:
 
@@ -36,16 +36,16 @@ npm install
 
 crear archivo .env:
 
-PORT=3000
+- PORT=3000
 
-FIREBASE_API_KEY=tu_api_key
-FIREBASE_AUTH_DOMAIN=tu_proyecto.firebaseapp.com
-FIREBASE_PROJECT_ID=tu_proyecto
-FIREBASE_STORAGE_BUCKET=tu_proyecto.appspot.com
-FIREBASE_MESSAGING_SENDER_ID=0000000000
-FIREBASE_APP_ID=1:0000000000:web:abc123
+- FIREBASE_API_KEY=tu_api_key
+- FIREBASE_AUTH_DOMAIN=tu_proyecto.firebaseapp.com
+- FIREBASE_PROJECT_ID=tu_proyecto
+- FIREBASE_STORAGE_BUCKET=tu_proyecto.appspot.com
+- FIREBASE_MESSAGING_SENDER_ID=0000000000
+- FIREBASE_APP_ID=1:0000000000:web:abc123
 
-JWT_SECRET=miclavesecreta123
+- JWT_SECRET=miclavesecreta123
 
 ejecutar el servidor:
 
@@ -67,33 +67,33 @@ Y usarlo en Postman o cualquier cliente, agregando este header:
 
 Authorization: Bearer <tu_token>
 
-#### Endpoints disponibles
+## Endpoints disponibles
 
-Productos (ruta base: /api/products)
+- Productos (ruta base: /api/products)
 
-Método	Ruta	            Descripción
-GET	    /api/products	    Obtener todos los productos
-GET	    /api/products/:id	Obtener producto por ID
-POST	/api/products	    Crear nuevo producto
-PUT	    /api/products/:id	Actualizar producto completo
-PATCH	/api/products/:id	Actualizar parcialmente
-DELETE	/api/products/:id	Eliminar producto
+- Método	Ruta	            Descripción
+- GET	    /api/products	    Obtener todos los productos
+- GET	    /api/products/:id	Obtener producto por ID
+- POST	/api/products	    Crear nuevo producto
+- PUT	    /api/products/:id	Actualizar producto completo
+- PATCH	/api/products/:id	Actualizar parcialmente
+- DELETE	/api/products/:id	Eliminar producto
 
-##### Base de Datos
+## Base de Datos
 
 Se utiliza Firestore como almacenamiento en la nube. La colección debe llamarse:
 
-products
+- products
 
 Cada documento debe contener los campos:
 
-name (string)
+- name (string)
 
-price (number)
+- price (number)
 
-description (string)
+- description (string)
 
-###### Licencia
+## Licencia
 
 Este proyecto es parte de una entrega académica. Uso educativo.
 
