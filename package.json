@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/pabliyo/proyectoBack#readme",
   "dependencies": {
+    "@vercel/node": "^5.3.5",
     "cors": "^2.8.5",
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
