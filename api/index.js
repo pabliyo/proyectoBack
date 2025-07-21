@@ -11,7 +11,9 @@ app.use(cors());
 app.use(express.json());
 
 //app.use('/products', authMiddleware, productRoutes);
-app.use('/products', productRoutes);
+app.get('/products/test', (req, res) => {
+  res.json({ message: '¡Funciona en Vercel!' });
+});
 
 app.use((req, res) => {
   res.status(404).json({ message: 'Ruta no encontrada' });
