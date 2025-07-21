@@ -10,10 +10,13 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use('/products', authMiddleware, productRoutes);
+//app.use('/products', authMiddleware, productRoutes);
+app.use('/products', productRoutes);
 
 app.use((req, res) => {
   res.status(404).json({ message: 'Ruta no encontrada' });
 });
 
-export default app;
+export default (req, res) => {
+  app(req, res);
+};
