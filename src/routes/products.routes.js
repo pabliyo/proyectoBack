@@ -10,4 +10,12 @@ router.put('/:id', productController.updateProduct);
 router.patch('/:id', productController.partialUpdateProduct);
 router.delete('/:id', productController.deleteProduct);
 
+
+// Ruta de prueba sin middleware
+router.get('/test', (req, res) => {
+  res.json({ message: 'Funciona sin JWT ni Firebase' });
+});
+
+
 export default router;
+
